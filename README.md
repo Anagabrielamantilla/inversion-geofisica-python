@@ -10,6 +10,7 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![SimPEG](https://img.shields.io/badge/SimPEG-Geophysics-23395B)](https://simpeg.xyz/)
 [![Course](https://img.shields.io/badge/curso-teórico--práctico-19A7CE)](#ruta-científica)
+[![YouTube](https://img.shields.io/badge/ver-clases_en_YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=gAqL1yqmJJw&list=PLBrkSquHNyNM)
 
 *Un laboratorio reproducible para explorar la relación*  
 *$\mathbf{d}=\mathcal{F}(\mathbf{m})+\boldsymbol{\varepsilon}$*  
@@ -39,18 +40,23 @@ El curso fue dirigido por **Ana Mantilla, Javier Torres y León Suárez**, con *
 
 ## Arquitectura conceptual
 
-```mermaid
-flowchart LR
-    D["Datos observados d"] --> Q["Control de calidad y unidades"]
-    M["Modelo inicial m₀"] --> F["Operador directo F(m)"]
-    Q --> J["Función objetivo"]
-    F --> J
-    R["Regularización y física"] --> J
-    J --> O["Optimización / entrenamiento"]
-    O --> P["Modelo estimado m*"]
-    P --> V["Validación: predicho vs. observado"]
-    V -. "iterar" .-> J
-```
+<p align="center">
+  <img src="docs/assets/inversion-architecture.svg" width="100%" alt="Arquitectura conceptual de la inversión geofísica: observación, modelado, simulación, función objetivo, optimización, validación e interpretación">
+</p>
+
+La inversión se plantea como un **ciclo iterativo y auditable**: los datos observados y la hipótesis física alimentan el operador directo; la discrepancia entre datos predichos y observados se combina con regularización y conocimiento previo; el modelo se actualiza hasta alcanzar convergencia, y finalmente se evalúan resolución, incertidumbre y coherencia geológica.
+
+## Clases grabadas
+
+<div align="center">
+
+### ▶️ [Ver la lista de reproducción completa en YouTube](https://www.youtube.com/watch?v=gAqL1yqmJJw&list=PLBrkSquHNyNM)
+
+[![Reproducir las clases del curso](https://img.youtube.com/vi/gAqL1yqmJJw/maxresdefault.jpg)](https://www.youtube.com/watch?v=gAqL1yqmJJw&list=PLBrkSquHNyNM)
+
+*Revisa las sesiones en orden y utiliza los notebooks de este repositorio como laboratorio práctico.*
+
+</div>
 
 ## Inicio rápido
 
@@ -71,7 +77,7 @@ Abre los notebooks desde su propia carpeta de sesión para conservar las rutas r
 .
 ├── docs/
 │   ├── brochure.pdf          # pieza publicitaria y programa original
-│   └── assets/course-map.png # mapa visual del curso
+│   └── assets/               # publicidad e infografía conceptual
 ├── materials/
 │   ├── session-01/           # introducción y regresión lineal
 │   ├── session-02/           # inversión gravimétrica

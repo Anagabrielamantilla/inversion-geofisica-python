@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitectura conceptual de la inversión geofísica</title>
+  <desc id="desc">Flujo iterativo desde observaciones y modelos físicos hasta optimización, validación e interpretación geológica.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070a2d"/>
+      <stop offset="0.52" stop-color="#1827a8"/>
+      <stop offset="1" stop-color="#075ca8"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19e3ff"/>
+      <stop offset="1" stop-color="#12a9d6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe36e"/>
+      <stop offset="1" stop-color="#ff9b37"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d2a8ff"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#020617" flood-opacity=".5"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#79e8ff"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#ffd85a"/>
+    </marker>
+    <style>
+      .title{font-family:Arial,Helvetica,sans-serif;font-size:54px;font-weight:700;fill:#fff;letter-spacing:.5px}
+      .subtitle{font-family:Arial,Helvetica,sans-serif;font-size:27px;font-weight:400;fill:#b9eaff}
+      .step{font-family:Arial,Helvetica,sans-serif;font-size:33px;font-weight:700;fill:#fff}
+      .body{font-family:Arial,Helvetica,sans-serif;font-size:27px;font-weight:400;fill:#dcecff}
+      .small{font-family:Arial,Helvetica,sans-serif;font-size:23px;font-weight:600;fill:#e7f7ff}
+      .number{font-family:Arial,Helvetica,sans-serif;font-size:29px;font-weight:800;fill:#08113e}
+      .method{font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;fill:#fff}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1050" rx="34" fill="url(#bg)"/>
+  <circle cx="140" cy="80" r="260" fill="#1447d7" opacity=".16"/>
+  <circle cx="1510" cy="920" r="330" fill="#0ee7ff" opacity=".09"/>
+  <path d="M0 900 C280 760 470 1030 760 884 S1240 720 1600 880" fill="none" stroke="#39ddff" stroke-width="2" opacity=".22"/>
+  <path d="M0 930 C280 790 500 1040 780 910 S1260 750 1600 910" fill="none" stroke="#39ddff" stroke-width="2" opacity=".16"/>
+
+  <text x="800" y="76" text-anchor="middle" class="title">ARQUITECTURA DE LA INVERSIÓN GEOFÍSICA</text>
+  <text x="800" y="115" text-anchor="middle" class="subtitle">Un ciclo científico: observar → simular → ajustar → validar → interpretar</text>
+
+  <!-- row 1 -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="165" width="410" height="190" rx="26" fill="#0c174a" stroke="#38dcff" stroke-width="3"/>
+    <circle cx="103" cy="205" r="24" fill="url(#cyan)"/><text x="103" y="215" text-anchor="middle" class="number">1</text>
+    <text x="145" y="216" class="step">OBSERVAR</text>
+    <text x="95" y="264" class="body">Datos de campo d<tspan baseline-shift="sub" font-size="17">obs</tspan></text>
+    <text x="95" y="302" class="small">• geometría y unidades</text>
+    <text x="95" y="335" class="small">• ruido, error e incertidumbre</text>
+
+    <rect x="595" y="165" width="410" height="190" rx="26" fill="#0c174a" stroke="#ad86ff" stroke-width="3"/>
+    <circle cx="638" cy="205" r="24" fill="url(#violet)"/><text x="638" y="215" text-anchor="middle" class="number">2</text>
+    <text x="680" y="216" class="step">MODELAR</text>
+    <text x="630" y="264" class="body">Hipótesis física m</text>
+    <text x="630" y="302" class="small">• malla, capas y propiedades</text>
+    <text x="630" y="335" class="small">• modelo inicial y restricciones</text>
+
+    <rect x="1130" y="165" width="410" height="190" rx="26" fill="#0c174a" stroke="#ffd45c" stroke-width="3"/>
+    <circle cx="1173" cy="205" r="24" fill="url(#gold)"/><text x="1173" y="215" text-anchor="middle" class="number">3</text>
+    <text x="1215" y="216" class="step">SIMULAR</text>
+    <text x="1165" y="264" class="body">Operador directo 𝓕(m)</text>
+    <text x="1165" y="302" class="small">• respuesta física predicha</text>
+    <text x="1165" y="335" class="small">• diferenciable o numérico</text>
+  </g>
+
+  <path d="M470 260 H580" fill="none" stroke="#79e8ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1005 260 H1115" fill="none" stroke="#79e8ff" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- objective hub -->
+  <g filter="url(#shadow)">
+    <rect x="340" y="430" width="920" height="205" rx="38" fill="#08113e" stroke="#55e6ff" stroke-width="4"/>
+    <rect x="372" y="458" width="856" height="65" rx="20" fill="#102782"/>
+    <text x="800" y="503" text-anchor="middle" class="step">4 · FUNCIÓN OBJETIVO</text>
+    <text x="800" y="566" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:35px;font-weight:700;fill:#fff">Φ(m) = ‖ W<tspan baseline-shift="sub" font-size="22">d</tspan>[𝓕(m) − d<tspan baseline-shift="sub" font-size="22">obs</tspan>] ‖² + β R(m)</text>
+    <text x="800" y="606" text-anchor="middle" class="subtitle">ajuste a los datos + regularización + conocimiento físico</text>
+  </g>
+
+  <path d="M265 355 C265 400 405 395 485 430" fill="none" stroke="#79e8ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M800 355 V414" fill="none" stroke="#ad86ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1335 355 C1335 400 1195 395 1115 430" fill="none" stroke="#ffd85a" stroke-width="5" marker-end="url(#arrowGold)"/>
+
+  <!-- row 3 -->
+  <g filter="url(#shadow)">
+    <rect x="85" y="710" width="410" height="185" rx="26" fill="#0c174a" stroke="#a68bff" stroke-width="3"/>
+    <circle cx="128" cy="750" r="24" fill="url(#violet)"/><text x="128" y="760" text-anchor="middle" class="number">5</text>
+    <text x="170" y="761" class="step">OPTIMIZAR</text>
+    <text x="120" y="809" class="small">• gradientes y sensibilidades</text>
+    <text x="120" y="842" class="small">• SimPEG / MLP / CNN</text>
+    <text x="120" y="875" class="small">• actualización iterativa mₖ₊₁</text>
+
+    <rect x="595" y="710" width="410" height="185" rx="26" fill="#0c174a" stroke="#38dcff" stroke-width="3"/>
+    <circle cx="638" cy="750" r="24" fill="url(#cyan)"/><text x="638" y="760" text-anchor="middle" class="number">6</text>
+    <text x="680" y="761" class="step">VALIDAR</text>
+    <text x="630" y="809" class="small">• predicho vs. observado</text>
+    <text x="630" y="842" class="small">• residuales y convergencia</text>
+    <text x="630" y="875" class="small">• resolución e incertidumbre</text>
+
+    <rect x="1105" y="710" width="410" height="185" rx="26" fill="#0c174a" stroke="#ffd45c" stroke-width="3"/>
+    <circle cx="1148" cy="750" r="24" fill="url(#gold)"/><text x="1148" y="760" text-anchor="middle" class="number">7</text>
+    <text x="1190" y="761" class="step">INTERPRETAR</text>
+    <text x="1140" y="809" class="small">• modelo estimado m*</text>
+    <text x="1140" y="842" class="small">• coherencia geológica</text>
+    <text x="1140" y="875" class="small">• decisión y comunicación</text>
+  </g>
+
+  <path d="M600 635 C545 665 390 670 300 695" fill="none" stroke="#ad86ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M495 802 H580" fill="none" stroke="#79e8ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1005 802 H1090" fill="none" stroke="#ffd85a" stroke-width="5" marker-end="url(#arrowGold)"/>
+  <path d="M1310 710 C1515 605 1515 370 1425 320" fill="none" stroke="#ffd85a" stroke-width="4" stroke-dasharray="13 11" marker-end="url(#arrowGold)"/>
+  <text x="1460" y="520" text-anchor="middle" transform="rotate(-90 1460 520)" class="small">retroalimentación científica</text>
+
+  <!-- method ribbon -->
+  <g filter="url(#glow)">
+    <rect x="110" y="952" width="1380" height="62" rx="31" fill="#0a1446" stroke="#47ddff" stroke-width="2"/>
+  </g>
+  <text x="300" y="992" text-anchor="middle" class="method">GRAVIMETRÍA 3D</text>
+  <circle cx="480" cy="984" r="5" fill="#4ce8ff"/>
+  <text x="650" y="992" text-anchor="middle" class="method">MAGNETOMETRÍA 3D</text>
+  <circle cx="830" cy="984" r="5" fill="#4ce8ff"/>
+  <text x="965" y="992" text-anchor="middle" class="method">MT 1D</text>
+  <circle cx="1075" cy="984" r="5" fill="#4ce8ff"/>
+  <text x="1265" y="992" text-anchor="middle" class="method">FWI + DEEP LEARNING</text>
+</svg>
