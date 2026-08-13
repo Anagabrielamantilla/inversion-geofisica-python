@@ -47,7 +47,7 @@ El curso fue dirigido por **Ana Mantilla, Javier Torres y León Suárez**, con *
 ## Arquitectura conceptual
 
 <p align="center">
-  <img src="docs/assets/architecture-conceptual.gif" width="100%" alt="Animación futurista de la arquitectura de inversión geofísica guiada por física e inteligencia artificial">
+  <img src="docs/assets/architecture-conceptual.svg" width="100%" alt="Animación futurista de la arquitectura de inversión geofísica guiada por física e inteligencia artificial">
 </p>
 
 La inversión se plantea como un **ciclo iterativo y auditable**: los datos observados y la hipótesis física alimentan el operador directo; la discrepancia entre datos predichos y observados se combina con regularización y conocimiento previo; el modelo se actualiza hasta alcanzar convergencia, y finalmente se evalúan resolución, incertidumbre y coherencia geológica.
