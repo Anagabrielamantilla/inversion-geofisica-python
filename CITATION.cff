@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Si usas estos materiales, cita este repositorio y reconoce a las personas responsables del curso."
-title: "Curso teórico-práctico sobre inversión geofísica en Python"
+title: "Curso teórico práctico sobre inversión geofísica en Python"
 type: software
 authors:
   - family-names: Mantilla
