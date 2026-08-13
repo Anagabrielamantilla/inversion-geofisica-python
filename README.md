@@ -187,7 +187,9 @@ Consulta el [folleto original](docs/brochure.pdf) para preservar la información
 
 Material asociado al proyecto **“Nuevas tecnologías computacionales para el procesamiento e inversión conjunta de gravimetría, magnetometría y magnetotelúrica mediante aprendizaje profundo guiado por principios físicos para la caracterización multicriterio”**.
 
-Organizan: **HDSP · GIGBA · CPS**, con participación institucional de la **Universidad Industrial de Santander**, la **Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones**, la **Facultad de Ciencias** y la **Agencia Nacional de Hidrocarburos**.
+Organizan: **HDSP · GIGBA · CPS**, con participación institucional de la **Universidad Industrial de Santander**.
+
+Financian: Ministerio de Ciencia, Tecnología e Innovación (MINCIENCIAS) y la Agencia Nacional de Hidrocarburos (ANH) a través del cto 045-2025.
 
 ## Uso y atribución
 
