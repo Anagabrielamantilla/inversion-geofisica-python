@@ -32,15 +32,17 @@ El curso fue dirigido por **Ana Mantilla, Javier Torres y León Suárez**, con *
 
 ## Ruta científica
 
-| Sesión | Eje | Del dato al modelo | Material |
-|:--:|---|---|---|
-| 01 | Fundamentos | No unicidad, sensibilidad, incertidumbre y regularización | [Abrir](materials/session-01/) |
-| 02 | Gravimetría 3D | Anomalía residual → contraste de densidad | [Abrir](materials/session-02/) |
-| 03 | Magnetometría 3D | Anomalía TMI → susceptibilidad magnética | [Abrir](materials/session-03/) |
-| 04 | MT 1D guiada por física | Impedancia Z<sub>xy</sub> → resistividad por capas | [Abrir](materials/session-04/) |
-| 05 | FWI: fundamentos | Registros sísmicos → modelo de velocidad | [Abrir](materials/session-05/) |
-| 06 | FWI: entrenamiento | *Shots* y pesos preentrenados → velocidad de onda P | [Abrir](materials/session-06/) |
-| 07 | Reto integrador MT 1D | Datos sintéticos → inversión profunda no supervisada | [Abrir](materials/session-07/) |
+| Sesión | Eje | Del dato al modelo | Material | Video |
+|:--:|---|---|:--:|:--:|
+| 01 | Fundamentos | No unicidad, sensibilidad, incertidumbre y regularización | [Abrir](materials/session-01/) | [▶ Ver sesión](https://www.youtube.com/watch?v=gAqL1yqmJJw&list=PLBrkSquHNyNM&index=1) |
+| 02 | Gravimetría 3D | Anomalía residual → contraste de densidad | [Abrir](materials/session-02/) | [▶ Ver sesión](https://www.youtube.com/watch?v=Yf4zvhu8cIk&list=PLBrkSquHNyNM&index=2) |
+| 03 | Magnetometría 3D | Anomalía TMI → susceptibilidad magnética | [Abrir](materials/session-03/) | *No publicado* |
+| 04 | MT 1D guiada por física | Impedancia Z<sub>xy</sub> → resistividad por capas | [Abrir](materials/session-04/) | [▶ Ver sesión](https://www.youtube.com/watch?v=SriI-fnhWYc&list=PLBrkSquHNyNM&index=3) |
+| 05 | FWI: fundamentos | Registros sísmicos → modelo de velocidad | [Abrir](materials/session-05/) | [▶ Ver sesión](https://www.youtube.com/watch?v=zWDQ6DE8mWs&list=PLBrkSquHNyNM&index=4) |
+| 06 | FWI: entrenamiento | *Shots* y pesos preentrenados → velocidad de onda P | [Abrir](materials/session-06/) | [▶ Ver sesión](https://www.youtube.com/watch?v=zzUrBL7tILg&list=PLBrkSquHNyNM&index=5) |
+| 07 | Reto integrador MT 1D | Datos sintéticos → inversión profunda no supervisada | [Abrir](materials/session-07/) | *No publicado* |
+
+> **Disponibilidad de videos:** la playlist pública contiene actualmente las grabaciones de las sesiones 1, 2, 4, 5 y 6. Esta tabla puede actualizarse cuando se publiquen las sesiones restantes.
 
 ## Arquitectura conceptual
 
