@@ -8,7 +8,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![SimPEG](https://img.shields.io/badge/SimPEG-Geophysics-23395B)](https://simpeg.xyz/)
+[![SimPEG](https://img.shields.io/badge/SimPEG-0.25.2-23395B)](https://simpeg.xyz/)
 [![Course](https://img.shields.io/badge/curso-teórico--práctico-19A7CE)](#ruta-científica)
 [![YouTube](https://img.shields.io/badge/ver-clases_en_YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=gAqL1yqmJJw&list=PLBrkSquHNyNM)
 
@@ -179,6 +179,7 @@ Consulta el [folleto original](docs/brochure.pdf) para preservar la información
 ## Datos, reproducibilidad y alcance
 
 - Los conjuntos `.npy`, `.txt` y `.edi` disponibles en la carpeta fuente se mantienen junto a su sesión.
+- **Versión de SimPEG:** las salidas guardadas en los notebooks registran `0.25.1` en el ejercicio sintético de gravimetría y `0.25.2` en los ejercicios de gravimetría real y magnetometría. Para ofrecer un entorno común y reproducible, `requirements.txt` fija `simpeg==0.25.2`.
 - Algunos notebooks hacen referencia a recursos externos o a nombres de archivos que no forman parte del paquete original; revisa sus celdas de preparación antes de ejecutar.
 - Los resultados numéricos pueden variar por versión de biblioteca, *hardware*, semilla y tolerancias del optimizador.
 - `requirements.txt` documenta el conjunto común de bibliotecas; cada notebook sigue siendo la referencia para requisitos específicos.
