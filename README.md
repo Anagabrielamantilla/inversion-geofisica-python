@@ -12,11 +12,15 @@
 [![Course](https://img.shields.io/badge/curso-teórico--práctico-19A7CE)](#ruta-científica)
 [![YouTube](https://img.shields.io/badge/ver-clases_en_YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=gAqL1yqmJJw&list=PLBrkSquHNyNM)
 
-*Un laboratorio reproducible para explorar la relación*  
-*$\mathbf{d}=\mathcal{F}(\mathbf{m})+\boldsymbol{\varepsilon}$*  
-*y reconstruir modelos físicos con ajuste de datos, regularización y aprendizaje profundo.*
-
 </div>
+
+<p align="center"><em>Un laboratorio reproducible para explorar la relación</em></p>
+
+$$
+\mathbf{d} = \mathcal{F}(\mathbf{m}) + \boldsymbol{\varepsilon}
+$$
+
+<p align="center"><em>y reconstruir modelos físicos con ajuste de datos, regularización y aprendizaje profundo.</em></p>
 
 ![Mapa visual del curso](docs/assets/course-map.png)
 
@@ -33,7 +37,7 @@ El curso fue dirigido por **Ana Mantilla, Javier Torres y León Suárez**, con *
 | 01 | Fundamentos | No unicidad, sensibilidad, incertidumbre y regularización | [Abrir](materials/session-01/) |
 | 02 | Gravimetría 3D | Anomalía residual → contraste de densidad | [Abrir](materials/session-02/) |
 | 03 | Magnetometría 3D | Anomalía TMI → susceptibilidad magnética | [Abrir](materials/session-03/) |
-| 04 | MT 1D guiada por física | Impedancia $Z_{xy}$ → resistividad por capas | [Abrir](materials/session-04/) |
+| 04 | MT 1D guiada por física | Impedancia Z<sub>xy</sub> → resistividad por capas | [Abrir](materials/session-04/) |
 | 05 | FWI: fundamentos | Registros sísmicos → modelo de velocidad | [Abrir](materials/session-05/) |
 | 06 | FWI: entrenamiento | *Shots* y pesos preentrenados → velocidad de onda P | [Abrir](materials/session-06/) |
 | 07 | Reto integrador MT 1D | Datos sintéticos → inversión profunda no supervisada | [Abrir](materials/session-07/) |
