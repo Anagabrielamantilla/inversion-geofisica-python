@@ -46,75 +46,9 @@ El curso fue dirigido por **Ana Mantilla, Javier Torres y León Suárez**, con *
 
 ## Arquitectura conceptual
 
-```mermaid
-%%{init: {"theme":"base","themeVariables":{"fontFamily":"Arial, sans-serif","fontSize":"22px","lineColor":"#38d9ff","primaryTextColor":"#ffffff"},"flowchart":{"htmlLabels":true,"curve":"basis","nodeSpacing":50,"rankSpacing":65}}}%%
-flowchart TB
-    subgraph ENTRADAS["① OBSERVAR Y CONSTRUIR LA HIPÓTESIS"]
-        direction LR
-        D["📡 <b>DATOS OBSERVADOS</b><br/>geometría · unidades · ruido<br/>incertidumbre de medición"]
-        M["🧩 <b>MODELO INICIAL</b><br/>malla o capas · propiedades físicas<br/>límites y conocimiento previo"]
-    end
-
-    subgraph FISICA["② TRADUCIR EL MODELO A UNA RESPUESTA FÍSICA"]
-        direction LR
-        F["⚙️ <b>OPERADOR DIRECTO F(m)</b><br/>ecuaciones físicas · discretización<br/>respuesta geofísica predicha"]
-        S["🔬 <b>SENSIBILIDAD</b><br/>¿qué parámetros controla cada dato?<br/>Jacobiano o gradiente automático"]
-        F --> S
-    end
-
-    subgraph NUCLEO["③ MEDIR LA DISCREPANCIA Y RESTRINGIR LA SOLUCIÓN"]
-        direction LR
-        MIS["🎯 <b>AJUSTE A LOS DATOS</b><br/>‖Wd [F(m) − dobs]‖²<br/>residuales ponderados"]
-        REG["🧭 <b>REGULARIZACIÓN R(m)</b><br/>suavidad · estructura · referencia<br/>principios físicos y geológicos"]
-        OBJ["✨ <b>FUNCIÓN OBJETIVO</b><br/>Φ(m) = misfit + β R(m)<br/>balance evidencia ↔ estabilidad"]
-        MIS --> OBJ
-        REG --> OBJ
-    end
-
-    subgraph SOLUCION["④ APRENDER, VALIDAR E INTERPRETAR"]
-        direction LR
-        OPT["🚀 <b>OPTIMIZACIÓN</b><br/>SimPEG · MLP · CNN<br/>actualización iterativa del modelo"]
-        VAL{"✅ <b>¿CONVERGE Y<br/>EXPLICA LOS DATOS?</b>"}
-        POST["🌍 <b>MODELO ESTIMADO m*</b><br/>resolución · incertidumbre<br/>coherencia e interpretación geológica"]
-        OPT --> VAL
-        VAL -- "sí" --> POST
-    end
-
-    D --> F
-    M --> F
-    F --> MIS
-    S --> OPT
-    OBJ --> OPT
-    VAL -. "no: revisar β, modelo, datos o física" .-> M
-    POST -. "nueva evidencia / nueva hipótesis" .-> D
-
-    G["🟣 <b>GRAVIMETRÍA 3D</b><br/>densidad"]
-    MAG["🔵 <b>MAGNETOMETRÍA 3D</b><br/>susceptibilidad"]
-    MT["🟢 <b>MT 1D</b><br/>resistividad por capas"]
-    W["🟠 <b>FWI + DEEP LEARNING</b><br/>velocidad de onda P"]
-    POST --> G
-    POST --> MAG
-    POST --> MT
-    POST --> W
-
-    classDef data fill:#073b66,stroke:#38d9ff,stroke-width:4px,color:#fff;
-    classDef model fill:#32186f,stroke:#b794ff,stroke-width:4px,color:#fff;
-    classDef physics fill:#102a56,stroke:#56e0ff,stroke-width:4px,color:#fff;
-    classDef objective fill:#142a86,stroke:#ffda57,stroke-width:5px,color:#fff;
-    classDef action fill:#123f65,stroke:#38d9ff,stroke-width:4px,color:#fff;
-    classDef decision fill:#5b245f,stroke:#ff8bd8,stroke-width:5px,color:#fff;
-    classDef result fill:#805019,stroke:#ffd05b,stroke-width:4px,color:#fff;
-    classDef method fill:#0b1747,stroke:#8fe9ff,stroke-width:3px,color:#fff;
-
-    class D data;
-    class M,REG model;
-    class F,S,MIS physics;
-    class OBJ objective;
-    class OPT action;
-    class VAL decision;
-    class POST result;
-    class G,MAG,MT,W method;
-```
+<p align="center">
+  <img src="docs/assets/architecture-conceptual.gif" width="100%" alt="Animación futurista de la arquitectura de inversión geofísica guiada por física e inteligencia artificial">
+</p>
 
 La inversión se plantea como un **ciclo iterativo y auditable**: los datos observados y la hipótesis física alimentan el operador directo; la discrepancia entre datos predichos y observados se combina con regularización y conocimiento previo; el modelo se actualiza hasta alcanzar convergencia, y finalmente se evalúan resolución, incertidumbre y coherencia geológica.
 
