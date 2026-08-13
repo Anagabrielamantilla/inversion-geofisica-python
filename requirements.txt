@@ -1,0 +1,12 @@
+jupyterlab
+numpy
+scipy
+matplotlib
+pandas
+tqdm
+simpeg
+discretize
+tensorflow
+torch
+tensorboard
+

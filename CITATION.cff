@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Si usas estos materiales, cita este repositorio y reconoce a las personas responsables del curso."
+title: "Curso teórico-práctico sobre inversión geofísica en Python"
+type: software
+authors:
+  - family-names: Mantilla
+    given-names: Ana
+  - family-names: Torres
+    given-names: Javier
+  - family-names: Suárez
+    given-names: León
+abstract: "Material docente sobre problemas inversos, gravimetría, magnetometría, magnetotelúrica 1D e inversión de onda completa en Python."
+keywords:
+  - geophysical inversion
+  - SimPEG
+  - magnetotellurics
+  - full-waveform inversion
+  - physics-guided deep learning
