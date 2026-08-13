@@ -122,7 +122,7 @@ La inversión se plantea como un **ciclo iterativo y auditable**: los datos obse
 
 ### ▶️ [Ver la lista de reproducción completa en YouTube](https://www.youtube.com/watch?v=gAqL1yqmJJw&list=PLBrkSquHNyNM)
 
-[![Vista previa de las clases del curso](https://img.youtube.com/vi/zWDQ6DE8mWs/maxresdefault.jpg)](https://www.youtube.com/watch?v=zWDQ6DE8mWs&list=PLBrkSquHNyNM&index=4&t=112s)
+[![Modelos 3D del subsuelo e inteligencia artificial: vista previa de las clases](docs/assets/youtube-course-preview.png)](https://www.youtube.com/watch?v=zWDQ6DE8mWs&list=PLBrkSquHNyNM&index=4&t=112s)
 
 **[▶ Reproducir este video desde el minuto 1:52](https://www.youtube.com/watch?v=zWDQ6DE8mWs&list=PLBrkSquHNyNM&index=4&t=112s)**
 
