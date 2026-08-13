@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Si usas estos materiales, cita este repositorio y reconoce a las personas responsables del curso."
+message: "Si usas estos materiales, cita este repositorio y reconoce a las personas, grupos de investigación e instituciones responsables del curso y de su financiación."
 title: "Curso teórico práctico sobre inversión geofísica en Python"
 type: software
 authors:
@@ -9,7 +9,19 @@ authors:
     given-names: Javier
   - family-names: Suárez
     given-names: León
-abstract: "Material docente sobre problemas inversos, gravimetría, magnetometría, magnetotelúrica 1D e inversión de onda completa en Python."
+abstract: >-
+  Material docente sobre problemas inversos, gravimetría, magnetometría,
+  magnetotelúrica 1D e inversión de onda completa en Python. El curso fue
+  dirigido por Ana Mantilla, Javier Torres y León Suárez, con PhD Henry
+  Arguello Fuentes como investigador principal, y organizado por los grupos
+  de investigación HDSP, GIGBA y CPS. Estos materiales fueron desarrollados
+  en el marco del Contrato No. 045-2025, financiado por el Ministerio de
+  Ciencia, Tecnología e Innovación (MINCIENCIAS) y la Agencia Nacional de
+  Hidrocarburos (ANH), como parte del proyecto "Nuevas tecnologías
+  computacionales para el procesamiento e inversión conjunta de gravimetría,
+  magnetometría y magnetotelúrica mediante aprendizaje profundo guiado por
+  principios físicos para la caracterización multicriterio".
+repository-code: "https://github.com/Anagabrielamantilla/inversion-geofisica-python"
 keywords:
   - geophysical inversion
   - SimPEG
